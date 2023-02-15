@@ -30,12 +30,14 @@ input[type="button"] {
     border: 2px solid;
     padding: 1em 2em;
     font-size: 1em;
-    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.2s;
 }
 input[type="button"]:hover {
     border-color: #1eae8a;
+    background-image:linear-gradient(30deg,#ffffff,#0bc7ba56);
     color: white;
-    box-shadow: 0 0.5em 0.5em -0.4em #8ae3bc;
+    box-shadow: 0.3em 0.6em 0.7em -0.5em #000000;
+    transform:scaleY(0.9);
     cursor: pointer;    
   }
 input{
@@ -94,6 +96,7 @@ span:hover{
 h2{
     letter-spacing:1.5px;
     margin-top:20px;
+    text-decoration:underline solid #91ddca;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size:40px;
@@ -126,7 +129,7 @@ img{
 .day{
     background-color: #f0f8ff7a;
     border-radius: 10px;
-    margin: 40px;
+    margin: 20px;
     padding:10px;
 }
 .forecast{
@@ -135,4 +138,14 @@ img{
     color: #0b404d;
     margin: 20px 50px;
     text-align: center;
+}
+p.head{
+    text-align: center;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+    text-decoration: underline rgb(255, 250, 247);
+    background-color: #ff00007a;
+    border-radius: 10px;
+    padding:10px;
 }
