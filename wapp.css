@@ -13,7 +13,7 @@ h1{
     text-align: center;
     font-size: 50px;
     margin-top: 0 auto;
-    color: #ffa260;
+    color: #b6a659;
 }
 .input{
     text-align: center;
@@ -24,7 +24,7 @@ input[type="text"]{
 }
 input[type="button"] {
     background: none;
-    color:#ffa260;
+    color:#b6a659;
     border: 2px solid;
     padding: 1em 2em;
     font-size: 1em;
@@ -52,23 +52,21 @@ input{
     text-align: center; 
     background-image:url("grad.jpg");
     height:350px;
-    width:50%;
+    width:55%;
     margin-left:10px;
     border-radius:5px;
 }
 .card{
-    width: 50%;
+    width: 100%;
     background:none;
     height: 20vh;
-    margin: 50px auto;  
-    padding: 5px 0;
+    /* margin: 50px auto;   */
     text-align: center;
 }
-
-  
 .card span{
-    font-family: 'Nunito', sans-serif;
-    background-image:linear-gradient(45deg,#7bd3d3,#f1f1f1,#8ed076);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    background-image:linear-gradient(45deg,#7bd3d3,#4c9fd3,#8ed076);
+    width:200px;
     border-radius: 10px;
     border-width: 1px;
     border-color: aqua;
@@ -76,7 +74,7 @@ input{
     border-width: 1px;
     border-style: solid;
     padding: 100px 25px;
-    color: #dba81a;
+    color: #ffffff;
     text-align: center;
     margin:40px 1px;
     font-size:20px;
@@ -93,7 +91,7 @@ span:hover{
     transition: ease-in-out 0.35s;
 }
 h2{
-    letter-spacing:2px;
+    letter-spacing:1.5px;
     margin-top:20px;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: 700;
