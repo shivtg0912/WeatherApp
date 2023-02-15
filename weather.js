@@ -10,9 +10,8 @@ var desc = document.querySelector('.desc');
 var humid=document.querySelector('.humid');
 var button= document.querySelector('.submit');
 button.addEventListener('click', function(name){
-
+  
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
-fetch('https://api.openweathermap.org/geo/1.0/direct?q='+input.value+'&limit=2&appid=5e7b7faaa7568661018741909b25513a')
 
 .then(response=>response.json())
 .then(data=>{
