@@ -10,18 +10,29 @@
 </head>
 <body> 
   <main>
-    <div class="image">
-      <img src="images.png">
+  <div class="image">
+    <img src="images.png">
+  </div>
+  <h1>Daily Weather Forecast</h1>
+  <div class="input">
+    <input type="text" placeholder="Enter the city" class="input_text">
+    <input type="button" value="Submit" class="submit">
+  </div>
     </div>
-    <h1>Daily Weather Forecast</h1>
-
-      <div class="input">
-        <input type="text" placeholder="Enter the city" class="input_text">
-        <input type="button" value="Submit" class="submit">
-      </div>
-    </div>
-    <div class="container">
-      <h2 class="name" id="name">City Name</h2>
+  <div class="container">
+      <table class='tablecity'>
+        <tr>
+        
+        <td>
+        <div class="image">
+          <p class="weatherIcon"/>
+        </div>
+        </td>
+        <td>
+        <h2 class="name" id="name"><img src="cloud2.png">City Name </h2>
+        </td>
+        </tr>
+      </table>
       <div class="card"> 
         <span class="temp">Temp-</span>
         <span class="desc">Description-</span>
@@ -29,45 +40,48 @@
         <span class="temp_min">Min.-</span>
         <span class="temp_max">Max.-</span>
       </div>
+  </div>
+  <div>
+    <div class="image">
+      <span class="weatherIcon"/>
     </div>
-    <div>
       <table>
-        <tr>
-          <td>
-              <p class="head">Next Four day Forecast</p>
-          </td>
-          <td>
-            <div class="day">
-              <p class="date">Sat Feb 11 2023</p>
-              <p>31 &#8451 / 25 &#8451</p>
-              <p class="desc">Overcast Clouds</p>
-            </div>
+      <tr>
+      <td>
+      <p class="head">Next Four day Forecast</p>
+      </td>
+      <td>
+      <div class="day">
+      <p class="date">Sat Feb 11 2023</p>
+      <p>31 &#8451 / 25 &#8451</p>
+      <p class="desc">Overcast Clouds</p>
+      </div>
 
-          </td>
-          <td>
-            <div class="day">
-              <p class="date">Sun Feb 12 2023</p>
-              <p>31 &#8451 / 25 &#8451</p>
-              <p class="desc">Overcast Clouds</p>
-          </div>
+      </td>
+      <td>
+      <div class="day">
+      <p class="date">Sun Feb 12 2023</p>
+      <p>31 &#8451 / 25 &#8451</p>
+      <p class="desc">Overcast Clouds</p>
+      </div>
 
-          </td>
-          <td>
-            <div class="day">
-              <p class="date">Mon Feb 13 2023</p>
-              <p>31 &#8451 / 25 &#8451</p>
-              <p class="desc">Overcast Clouds</p>
-          </div>
+      </td>
+      <td>
+      <div class="day">
+      <p class="date">Mon Feb 13 2023</p>
+      <p>31 &#8451 / 25 &#8451</p>
+      <p class="desc">Overcast Clouds</p>
+      </div>
 
-          </td>
-          <td>
-            <div class="day">
-              <p class="date">Tue Feb 14 2023</p>
-              <p>31 &#8451 / 25 &#8451</p>
-              <p class="desc">Overcast Clouds</p>
-          </div>
-          </td>
-        </tr>
+      </td>
+      <td>
+      <div class="day">
+      <p class="date">Tue Feb 14 2023</p>
+      <p>31 &#8451 / 25 &#8451</p>
+      <p class="desc">Overcast Clouds</p>
+      </div>
+      </td>
+      </tr>
       </table>
     </div>
   </main>
