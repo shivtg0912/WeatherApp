@@ -1,4 +1,3 @@
-
 var input = document.querySelector('.input_text');
 var lat=document.querySelector('.lat')
 var lon=document.querySelector('.lon')
@@ -9,6 +8,7 @@ var temp = document.querySelector('.temp');
 var desc = document.querySelector('.desc');
 var humid=document.querySelector('.humid');
 var button= document.querySelector('.submit');
+var weatherIcon = document.querySelector('.weatherIcon');
 button.addEventListener('click', function(name){
   
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
@@ -21,13 +21,18 @@ var tempValue = data['main']['temp'];
 var humidValue = data['main']['humidity'];
 var nameValue = data['name'];
 var descValue = data['weather'][0]['description'];
+var weatherIconValue = data['weather'][0]['icon'];
   main.innerHTML = nameValue;
   humid.innerHTML="Humidity-"+humidValue;
   desc.innerHTML = "Description - "+descValue;
   temp.innerHTML = `Temperature-${parseInt(tempValue)-273}\u00B0C`;
   temp_min.innerHTML = `Min.-${parseInt(mintempValue)-273}\u00B0C`;
   temp_max.innerHTML = `Max.-${parseInt(maxtempValue)-273}\u00B0C`;
+  weatherIcon.innerHTML = `<img src= "https://openweathermap.org/img/wn/${weatherIconValue}@2x.png"/>`;
   input.value ="";
 })
 .catch(err=>alert("Doesn't exist."));
 })
+
+
+
